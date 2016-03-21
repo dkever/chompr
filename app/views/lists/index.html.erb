@@ -1,11 +1,12 @@
-<ul>
  <div class="container list">
    <ul class="list-group">
     <% @responses.each do |response| %>
-    <a href="<%= response.url%>" target="_blank">
     <li class="list-group-item">
      <ul>
+      <a href="<%= response.url%>" target="_blank">
+
       <li><h2><%= response.name %></h2></li>
+     </a>
       <img class="yelp-img" src="<%= response.image_url%>">
       <h4>Rating</h4><li><%= response.rating %></li>
       <h4>Category:</h4>
@@ -14,7 +15,6 @@
       <li><%= response.location.address[0] %></li>
      </ul>
     </li>
-   </a>
     <% end %>
    </ul>
   </ul>
