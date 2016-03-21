@@ -1,6 +1,7 @@
 class ListsController < ApplicationController
  def index
   @lists = List.all
+  render json: Yelp.client.search('Dallas', {term: 'tacos',limit: 10})
  end
 
 
@@ -9,5 +10,5 @@ class ListsController < ApplicationController
     parameters = { term: params[:term], limit: 16 }
     render json: Yelp.client.search('San Francisco', parameters)
   end
-  
+
 end
