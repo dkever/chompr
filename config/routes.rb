@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :models
   root 'lists#index'
  devise_for :users
   resources :lists
