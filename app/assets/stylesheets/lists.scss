@@ -26,6 +26,7 @@ $bluelink: #337ab7;
 
    h2 {
      text-align: center;
+     color: $bluelink;
    }
    a:hover {
      text-decoration: none;
@@ -44,11 +45,7 @@ $bluelink: #337ab7;
  .content {
    text-align: center;
    ul {
-     margin-left: -40px;
-     #restaurant {
-       margin-top: 18%;
-
-     }
+     margin-left: -70px;
    }
  }
  header {

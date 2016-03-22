@@ -1,7 +1,26 @@
-<% @responses.each do |response| %>
-  <%= response["name"] %>
+<div class="container list">
+ <ul class="list-group">
+  <% @responses.each do |response| %>
+  <li class="list-group-item">
+   <div class="content">
+    <ul>
+     <div class="container">
+      <div class="row">
+       <div class="col-sm-6">
+        <li>img here</li>
+       </div>
+       <div class="col-sm-6">
+        <li><%= response["address"] %></li>
+        <li><%= response["tel"] %></li>
+        <li><a href="<%= response["website"] %>" target="_blank">Website</a></li>
+       </div>
+      </div>
+     </div>
+     <li id="restaurant"><h2 class="lg-foot"><%= response["name"] %></h2></li>
 
-
-
-<% end %>
-
+    </ul>
+   </div>
+  </li>
+  <% end %>
+ </ul>
+</div>
