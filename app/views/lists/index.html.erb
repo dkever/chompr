@@ -1,32 +1,7 @@
-<div class="container list">
- <ul class="list-group">
-  <% @responses.each do |response| %>
-   <li class="list-group-item">
-     <div class="content">
-      <ul>
-       <div class="container">
-        <div class="row">
-         <div class="col-sm-6">
-           <img class="yelp-img img-circle" src="<%= response.image_url%>">
-         </div>
-         <div class="col-sm-6">
-           <h4>Rating</h4>
-             <li><%= response.rating %></li>
-           <h4>Category:</h4>
-             <li><%= response.categories[0][0]%></li>
-           <h4>Address:</h4>
-             <li><%= response.location.address[0] %></li>
-           <h4>Phone Number</h4>
-           <li><%= response.display_phone %></li>
-         </div>
-         <a href="<%= response.url%>" target="_blank">
-         <li id="restaurant"><h2 class="lg-foot"><%= response.name %></h2></li>
-        </a>
-        </div>
-       </div>
-      </ul>
-     </div>
-   </li>
-  <% end %>
- </ul>
-</div>
+<% @responses.each do |response| %>
+  <%= response["name"] %>
+
+
+
+<% end %>
+

@@ -29,10 +29,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'rails_12factor', group: :production
-gem 'yelp', require: 'yelp'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'factual-api', :require => 'factual'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
