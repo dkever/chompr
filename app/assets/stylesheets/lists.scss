@@ -1,53 +1,59 @@
 // Place all the styles related to the Lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/* variables */
 
-#logo {
- font-size: 100px;
- letter-spacing: 3px;
-}
-header {
-  text-align: center;
-  .fa {
-    padding: 0px 40px;
-  }
-}
-.list-group-item {
-  margin-top: 20px;
-}
-.list {
-  margin: 0 auto;
+$lightgrey: #d3d3d3;
+$bluelink: #337ab7;
+/* list index */
 
-  h2 {
-    text-align: center;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-}
-ul {
-  li {
-    list-style-type: none;
-  }
-}
-.yelp-img {
-  width: 170px;
-  margin: 0 auto;
-}
-.content {
-  text-align: center;
-  ul {
-    margin-left: -40px;
-    #restaurant {
-      margin-top: 18%;
-
-    }
-  }
-}
-header {
- a:hover {
-  text-decoration: none;
-  color: #d3d3d3;
+ #logo {
+  font-size: 100px;
+  letter-spacing: 3px;
  }
-}
+ header {
+   text-align: center;
+   .fa {
+     padding: 0px 40px;
+   }
+ }
+ .list-group-item {
+   margin-top: 20px;
+ }
 
+ .list {
+   margin: 0 auto;
+
+   h2 {
+     text-align: center;
+   }
+   a:hover {
+     text-decoration: none;
+     color: $lightgrey;
+   }
+
+ }
+ ul {
+   li {
+     list-style-type: none;
+   }
+ }
+ .yelp-img {
+   width: 170px;
+ }
+ .content {
+   text-align: center;
+   ul {
+     margin-left: -40px;
+     #restaurant {
+       margin-top: 18%;
+
+     }
+   }
+ }
+ header {
+  a:hover {
+   text-decoration: none;
+   color: $lightgrey;
+  }
+ }
