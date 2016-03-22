@@ -1,6 +1,11 @@
 // Place all the styles related to the Lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/* variables */
+
+$lightgrey: #d3d3d3;
+$bluelink: #337ab7;
+/* list index */
 
  #logo {
   font-size: 100px;
@@ -24,7 +29,7 @@
    }
    a:hover {
      text-decoration: none;
-     color: #ADD8E6;
+     color: $lightgrey;
    }
 
  }
@@ -49,6 +54,6 @@
  header {
   a:hover {
    text-decoration: none;
-   color: #d3d3d3;
+   color: $lightgrey;
   }
  }
