@@ -12,12 +12,13 @@
 <header>
   <h1 id="logo">chompr</h1>
   <a href=""><i class="fa fa-cog fa-3x"></i></a>
-  <a href=""<i class="fa fa-bars fa-3x"></i></a>
+  <a href=""><i class="fa fa-bars fa-3x"></i></a>
+  <%= link_to '', destroy_user_session_path, method: :delete, class: 'fa fa-3x fa-sign-out' %>
+
   <hr>
 </header>
 
 <%= yield %>
-<%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-block btn-default' %>
 
 </body>
 </html>

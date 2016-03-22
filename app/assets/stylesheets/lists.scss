@@ -17,9 +17,7 @@ header {
 }
 .list {
   margin: 0 auto;
-  .list-group-item-heading {
 
-  }
   h2 {
     text-align: center;
   }
@@ -46,6 +44,9 @@ ul {
     }
   }
 }
-.lg-foot {
-
+header {
+ a:hover {
+  text-decoration: none;
+  color: #d3d3d3;
+ }
 }
