@@ -2,7 +2,6 @@
  <ul class="list-group">
   <% @responses.each do |response| %>
    <li class="list-group-item">
-    <a href="<%= response.url%>" target="_blank">
      <div class="content">
       <ul>
        <div class="container">
@@ -20,12 +19,13 @@
            <h4>Phone Number</h4>
            <li><%= response.display_phone %></li>
          </div>
+         <a href="<%= response.url%>" target="_blank">
          <li id="restaurant"><h2 class="lg-foot"><%= response.name %></h2></li>
+        </a>
         </div>
        </div>
       </ul>
      </div>
-    </a>
    </li>
   <% end %>
  </ul>
