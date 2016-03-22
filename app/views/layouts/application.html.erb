@@ -3,7 +3,6 @@
 <head>
   <title>Chomprr</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -13,9 +12,12 @@
 <body>
 <header>
   <h1 id="logo">chompr</h1>
+  <% if user_signed_in? %>
   <a href=""><i class="fa fa-cog fa-3x"></i></a>
   <a href=""><i class="fa fa-bars fa-3x"></i></a>
   <%= link_to '', destroy_user_session_path, method: :delete, class: 'fa fa-3x fa-sign-out' %>
+
+  <% end %>
 
   <hr>
 </header>
