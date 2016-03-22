@@ -9,8 +9,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
- <h1 id="logo">Chomprr</h1>
- <hr>
+<header>
+  <h1 id="logo">chompr</h1>
+  <a href=""><i class="fa fa-cog fa-3x"></i></a>
+  <a href=""<i class="fa fa-bars fa-3x"></i></a>
+  <hr>
+</header>
 
 <%= yield %>
 <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-block btn-default' %>
