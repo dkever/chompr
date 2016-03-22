@@ -2,22 +2,22 @@
    <ul class="list-group">
     <% @responses.each do |response| %>
     <li class="list-group-item">
+     <div class="content">
      <ul>
       <a href="<%= response.url%>" target="_blank">
-
       <li><h2><%= response.name %></h2></li>
      </a>
-      <img class="yelp-img" src="<%= response.image_url%>">
+      <img class="yelp-img img-circle" src="<%= response.image_url%>">
       <h4>Rating</h4><li><%= response.rating %></li>
       <h4>Category:</h4>
       <li><%= response.categories[0][0]%></li>
       <h4>Address:</h4>
       <li><%= response.location.address[0] %></li>
      </ul>
+    </div>
     </li>
     <% end %>
    </ul>
   </ul>
   </div>
  </div>
-<%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-block btn-default' %>

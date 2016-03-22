@@ -1,8 +1,7 @@
 class ListsController < ApplicationController
 
  def index
-
-   @responses = Yelp.client.search('Austin', {limit:20, term: 'food'}).businesses
-
+   @responses = Yelp.client.search('78748', {limit:20, term: 'food'}).businesses
  end
+ 
 end
